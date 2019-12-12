@@ -3,7 +3,7 @@
 This is a pytorch implementation of GAIL in a navigation problem. Just run "GAIL_OppositeV4.py". The program first train a expert to solve the task, then sample a expert trajectory, then use GAIL to imitate it.
 
 
-You will get something like that finally
+You will get something like that at the end
  ```
 expert trajectory
 step 0 agent 1 at [[0.44444444 0.11111111]] agent 1 action 0
