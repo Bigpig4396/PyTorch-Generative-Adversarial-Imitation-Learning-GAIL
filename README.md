@@ -3,6 +3,13 @@
 This is a pytorch implementation of GAIL in a navigation problem. Just run "GAIL_OppositeV4.py". The program first train a expert to solve the task, then sample a expert trajectory, then use GAIL to imitate it.
 
 
+Then environment is something like that
+![image](https://github.com/Bigpig4396/PyTorch-Generative-Adversarial-Imitation-Learning-GAIL/blob/master/env.png)
+
+
+states are numpy array of size (1, 2), which are x,y coordinate. action are 0-4 integer for go up/go down/go left/go right/wait, should be fed into step function as step([action, 0]).
+
+
 You will get something like that at the end
  ```
 expert trajectory
@@ -32,4 +39,4 @@ step 9 agent 1 at [[0.11111111 0.77777778]] agent 1 action 1
 step 10 agent 1 at [[0.22222222 0.77777778]] agent 1 action 1
 step 11 agent 1 at [[0.33333333 0.77777778]] agent 1 action 1
 ```
-You can see it replicate the expert trajectory correctly.
+You can see it replicates the expert trajectory correctly.
