@@ -4,7 +4,7 @@ This is a pytorch implementation of GAIL in a navigation problem. Just run "GAIL
 
 
 You will get something like that finally
-'''
+ ```
 expert trajectory
 step 0 agent 1 at [[0.44444444 0.11111111]] agent 1 action 0
 step 1 agent 1 at [[0.33333333 0.11111111]] agent 1 action 0
@@ -31,4 +31,5 @@ step 8 agent 1 at [[0.11111111 0.66666667]] agent 1 action 3
 step 9 agent 1 at [[0.11111111 0.77777778]] agent 1 action 1
 step 10 agent 1 at [[0.22222222 0.77777778]] agent 1 action 1
 step 11 agent 1 at [[0.33333333 0.77777778]] agent 1 action 1
-'''
+```
+You can see it replicate the expert trajectory correctly.
