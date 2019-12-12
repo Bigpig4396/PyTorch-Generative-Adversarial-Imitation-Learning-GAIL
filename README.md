@@ -42,3 +42,6 @@ step 10 agent 1 at [[0.22222222 0.77777778]] agent 1 action 1
 step 11 agent 1 at [[0.33333333 0.77777778]] agent 1 action 1
 ```
 You can see it replicates the expert trajectory correctly.
+
+
+Ho, Jonathan, and Stefano Ermon. "Generative adversarial imitation learning." Advances in neural information processing systems. 2016.
