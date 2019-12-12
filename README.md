@@ -3,7 +3,9 @@
 This is a pytorch implementation of GAIL in a navigation problem. Just run "GAIL_OppositeV4.py". The program first train a expert to solve the task, then sample a expert trajectory, then use GAIL to imitate it.
 
 
-Then environment is something like that
+Then environment is something like that, start position is red, goal position is green.
+
+
 ![image](https://github.com/Bigpig4396/PyTorch-Generative-Adversarial-Imitation-Learning-GAIL/blob/master/env.png)
 
 
