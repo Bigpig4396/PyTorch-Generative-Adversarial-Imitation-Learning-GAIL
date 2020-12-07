@@ -112,11 +112,10 @@ class GAIL(object):
             e_a1 = torch.cat([e_a1, temp_e_a1], dim=0)
 
         p1_pred = self.disc1(p_s1, p_a1)
-        fake_reward = p1_pred.mean()
 
         a1_loss = torch.FloatTensor([0.0])
         for t in range(T):
-            a1_loss = a1_loss + fake_reward * log_pi_a1_list[t]
+            a1_loss = a1_loss + p1_pred[t, 0] * log_pi_a1_list[t]
         a1_loss = -a1_loss / T
 
         # print(a1_loss)
